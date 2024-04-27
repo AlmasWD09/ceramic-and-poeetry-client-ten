@@ -14,7 +14,7 @@ const Navbar = () => {
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/about'>About</NavLink>
        { 
-        user? <NavLink to='/allCraft'>All Craft</NavLink> : ''
+        user? <NavLink to='/addCraft'>Add Craft</NavLink> : ''
         }
     </>
 const handleLogOut = () =>{

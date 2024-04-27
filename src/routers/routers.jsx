@@ -7,8 +7,9 @@ import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
-import AllCruft from "../pages/Register/AllCruft/AllCruft";
 import PrivatRoutes from "../privatRoutes/PrivatRoutes";
+import AddCraft from "../anotherFroms/AddForms/AddCraft";
+
 
 const routers = createBrowserRouter([
   {
@@ -25,9 +26,9 @@ const routers = createBrowserRouter([
             element:<About />,
         },
         {
-            path:'/allCraft',
+            path:'/addCraft',
             element:<PrivatRoutes>
-              <AllCruft />
+              <AddCraft />
             </PrivatRoutes>,
         },
         {
