@@ -1,11 +1,12 @@
-// import Slider from "../Slider/Slider";
+import Slider from "../Slider/Slider";
+import CeramicesCurds from "../../components/CeramicesCurds/CeramicesCurds";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>home page</h1>
-            {/* <Slider /> */}
+            <Slider />
+            <CeramicesCurds />
         </div>
     );
 };

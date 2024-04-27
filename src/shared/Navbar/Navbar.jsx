@@ -13,8 +13,14 @@ const Navbar = () => {
     const links = <>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/about'>About</NavLink>
+        <NavLink to='/allArt'>All art</NavLink>
        { 
-        user? <NavLink to='/addCraft'>Add Craft</NavLink> : ''
+        user? <div className="flex gap-10">
+            <NavLink to='/addCraft'>Add craft</NavLink>
+            <NavLink to='/myArt'>My art</NavLink>
+        </div>
+        :
+        ''
         }
     </>
 const handleLogOut = () =>{
@@ -27,7 +33,7 @@ const handleLogOut = () =>{
     }
     return (
         <nav className="bg-base-300">
-            <div className="navbar max-w-7xl mx-auto px-8 md:px-20">
+            <div className="navbar max-w-7xl mx-auto px-8 border-2 border-red-500">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

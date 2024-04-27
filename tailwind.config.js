@@ -13,7 +13,7 @@ export default {
       colors: {
         // 'primary': '#191980',
         'primary': 'green',
-        'secondery': 'red',
+        'secondery': 'pink',
       },
     },
   },

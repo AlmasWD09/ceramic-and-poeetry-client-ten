@@ -8,8 +8,18 @@ import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { useEffect, useState } from 'react';
 
 const Slider = () => {
+const [categorys,setCategorys] = useState([])
+useEffect(()=>{
+  const url = './slider.json'
+  fetch(url)
+  .then(res=>res.json())
+  .then(data=>setCategorys(data))
+},[])
+
+
     return (
         <>
         <Swiper
@@ -22,39 +32,33 @@ const Slider = () => {
           pagination={{
             clickable: true,
           }}
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
+          // navigation={true}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper max-w-7xl mx-auto px-8 md:px-20"
         >
             {/* slider 1 */}
-          <SwiperSlide>
-          <div className='h-[40vh] md:h-[55vh] lg:h-[60vh] rounded-2xl bg-green-300'>
-            </div>
-          </SwiperSlide>
-
-          {/* slider 2 */}
-          <SwiperSlide>
-          <div className='h-[40vh] md:h-[55vh] lg:h-[60vh] rounded-2xl bg-green-300'>
-        </div>
-          </SwiperSlide>
-
-          {/* slider 3 */}
-          <SwiperSlide>
-          <div className='h-[40vh] md:h-[55vh] lg:h-[60vh] rounded-2xl bg-green-300'>
-        </div>
-          </SwiperSlide>
-
-          {/* slider 4 */}
-          <SwiperSlide>
-          <div className='h-[40vh] md:h-[55vh] lg:h-[60vh] rounded-2xl bg-green-300'>
-        </div>
-          </SwiperSlide>
-          
-          {/* slider 5 */}
-          <SwiperSlide>
-
-          </SwiperSlide>
-          <SwiperSlide>Slide 6</SwiperSlide>
+            
+            {
+              categorys.map((item,idx)=>{
+                return (
+                  <SwiperSlide key={idx}>
+                    <div className='lg:h-[400px] bg-black relative'>
+                      <img className='w-full opacity-40' src={item.image} alt="" />
+                      <div className='lg:w-[60%] inset-0 my-10 p-10 space-y-4 text-white absolute'>
+                      <div>
+                      <h3 className='text-2xl md:text-3xl font-semibold'>{item.pottery_type}</h3>
+                      <h3 className='text-md md:text-xl font-semibold'>{item.title}</h3>
+                      </div>
+                      <p>{item.description}</p>
+                      <button className='bg-primary p-3 text-white rounded-lg'>Explore more</button>
+                      </div>
+                    <p></p>
+                    </div>
+                  </SwiperSlide>
+                )
+              })
+            }
+ 
         </Swiper>
       </>
     );
