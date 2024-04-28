@@ -17,7 +17,7 @@ const Footer = () => {
 
 
     return (
-        <div className="bg-gray-200 mt-10 hidden">
+        <div className="bg-gray-200 mt-10 ">
             <div className="max-w-7xl mx-auto px-8  py-20">
                 <div className="flex md:gap-10">
                     <div className="w-[30%] space-y-3">
