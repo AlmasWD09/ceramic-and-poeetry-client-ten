@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import toast from "react-hot-toast";
 
 
@@ -42,6 +43,10 @@ const AddCraft = () => {
         })
     }
     return (
+        <>
+            <Helmet>
+                <title>Ceramices and poettry / add craft</title>
+            </Helmet>
         <div className=" md:h-screen bg-gray-300 py-10">
             <div className="max-w-7xl mx-auto px-8">
                 <form onSubmit={handleAddCraft}>
@@ -114,6 +119,8 @@ const AddCraft = () => {
                 </form>
             </div>
         </div>
+        </>
+        
     );
 };
 

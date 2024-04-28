@@ -1,15 +1,24 @@
 import Slider from "../Slider/Slider";
 import AirtistPottery from "../../components/Airtist/AirtistPottery";
 import CeramicesCurds from "../../components/CeramicesCurds/CeramicesCurds";
+import { Helmet } from "react-helmet-async";
+import PotteryPulse from "../../components/PotteryPulse/PotteryPulse";
 
 
 const Home = () => {
     return (
-        <div>
-            <Slider />
-            <CeramicesCurds />
-        <AirtistPottery />
-        </div>
+        <>
+            <Helmet>
+                <title>Ceramices and pottery / Home</title>
+            </Helmet>
+            <div>
+                <Slider />
+                <CeramicesCurds />
+                <PotteryPulse />
+                <AirtistPottery />
+            </div>
+        </>
+
     );
 };
 

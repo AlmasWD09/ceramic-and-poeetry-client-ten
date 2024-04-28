@@ -1,10 +1,16 @@
+import { Helmet } from "react-helmet-async";
 
 
 const AllArts = () => {
     return (
-        <div>
-            <h1>all art page</h1>
-        </div>
+        <>
+            <Helmet>
+                <title>Ceramices and poettry / all art</title>
+            </Helmet>
+            <div>
+                <h1>all art page</h1>
+            </div>
+        </>
     );
 };
 

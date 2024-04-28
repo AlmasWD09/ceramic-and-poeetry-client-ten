@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../SocialLogin/SocialLogin";
 import useAuth from "../../utllity/useAuth";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -56,6 +57,11 @@ const Login = () => {
     }
 
     return (
+        <>
+        <Helmet>
+            <title>Cemetries and // login page</title>
+        </Helmet>
+   
         <div className="flex justify-center items-center px-8 lg:px-24 mt-10">
             <div className="w-full md:w-3/5 lg:w-1/3 mx-auto p-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] rounded-lg ">
                 <h1 className="text-xl font-bold text-center p-4">Please Login</h1>
@@ -85,6 +91,8 @@ const Login = () => {
                 <SocialLogin />
             </div>
         </div>
+
+        </>
     );
 };
 
