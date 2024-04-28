@@ -43,7 +43,7 @@ const AddCraft = () => {
     }
     return (
         <div className=" md:h-screen bg-gray-300 py-10">
-            <div className="max-w-7xl mx-auto px-8 md:px-20">
+            <div className="max-w-7xl mx-auto px-8">
                 <form onSubmit={handleAddCraft}>
                     <div className="flex flex-col md:flex-row justify-center md:justify-between gap-2">
                         <div className="w-full">

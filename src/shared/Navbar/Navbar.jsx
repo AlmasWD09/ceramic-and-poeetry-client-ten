@@ -13,11 +13,11 @@ const Navbar = () => {
     const links = <>
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/about'>About</NavLink>
-        <NavLink to='/allArt'>All art</NavLink>
+        <NavLink to='/allArt'>All artCruft</NavLink>
        { 
         user? <div className="flex gap-10">
             <NavLink to='/addCraft'>Add craft</NavLink>
-            <NavLink to='/myArt'>My art</NavLink>
+            <NavLink to='/myArt'>My artCruft</NavLink>
         </div>
         :
         ''
@@ -44,7 +44,7 @@ const handleLogOut = () =>{
                             {links}
                         </ul>
                     </div>
-                    <a onClick={handleClick} className="text-2xl font-semibold cursor-pointer">Ember & Clay</a>
+                    <a onClick={handleClick} className="text-2xl font-semibold font-poppins cursor-pointer">Ember & Clay</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-10">

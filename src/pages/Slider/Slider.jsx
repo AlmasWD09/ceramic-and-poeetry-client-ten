@@ -7,13 +7,13 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, } from 'swiper/modules';
 import { useEffect, useState } from 'react';
 
 const Slider = () => {
 const [categorys,setCategorys] = useState([])
 useEffect(()=>{
-  const url = './slider.json'
+  const url = 'http://localhost:5000/sliders'
   fetch(url)
   .then(res=>res.json())
   .then(data=>setCategorys(data))
@@ -34,7 +34,7 @@ useEffect(()=>{
           }}
           // navigation={true}
           modules={[Autoplay, Pagination]}
-          className="mySwiper max-w-7xl mx-auto px-8 md:px-20"
+          className="mySwiper max-w-7xl mx-auto px-8 "
         >
             {/* slider 1 */}
             
@@ -42,8 +42,8 @@ useEffect(()=>{
               categorys.map((item,idx)=>{
                 return (
                   <SwiperSlide key={idx}>
-                    <div className='lg:h-[400px] bg-black relative'>
-                      <img className='w-full opacity-40' src={item.image} alt="" />
+                    <div className='lg:h-[400px] bg-black relative mt-5 rounded-lg '>
+                      <img className='w-full opacity-40 rounded-lg' src={item.image} alt="" />
                       <div className='lg:w-[60%] inset-0 my-10 p-10 space-y-4 text-white absolute'>
                       <div>
                       <h3 className='text-2xl md:text-3xl font-semibold'>{item.pottery_type}</h3>

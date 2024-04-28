@@ -11,6 +11,7 @@ import PrivatRoutes from "../privatRoutes/PrivatRoutes";
 import AddCraft from "../anotherFroms/AddForms/AddCraft";
 import AllArts from "../pages/AllArts/AllArts";
 import MyArts from "../pages/MyArts/MyArts";
+import CeramicViewDetails from "../components/CeramicesCurds/CeramicViewDetails";
 
 
 const routers = createBrowserRouter([
@@ -42,6 +43,10 @@ const routers = createBrowserRouter([
             element:<PrivatRoutes>
               <MyArts />
             </PrivatRoutes>,
+        },
+        {
+          path:'/ceramicesViewDetails/:id',
+          element:<CeramicViewDetails />,
         },
         {
             path:'/register',

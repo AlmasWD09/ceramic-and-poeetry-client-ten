@@ -17,15 +17,15 @@ const Footer = () => {
 
 
     return (
-        <div className="bg-gray-200 hidden">
-            <div className="max-w-7xl mx-auto px-8 md:px-20 py-20">
+        <div className="bg-gray-200 mt-10 hidden">
+            <div className="max-w-7xl mx-auto px-8  py-20">
                 <div className="flex md:gap-10">
                     <div className="w-[30%] space-y-3">
                         <h3 className="text-3xl font-bold mt-5">Ember & Clay</h3>
                         <p className="text-sm ">This could be a metaphorical representation of how text gives form to ideas and shapes our understanding</p>
                         <div className="flex gap-3 pb-3">
-                            <a className="border-2 border-primary w-10 h-10 flex justify-center items-center rounded-full text-primary hover:bg-primary hover:text-white text-2xl" href=""><IoLogoFacebook /></a>
-                            <a className="border-2 border-primary w-10 h-10 flex justify-center items-center rounded-full text-primary hover:bg-primary hover:text-white text-2xl" href=""><IoLogoGithub /></a>
+                            <a className="border-2 border-primary w-10 h-10 flex justify-center items-center rounded-full text-primary hover:bg-primary hover:text-white text-2xl" href="https://www.facebook.com/profile.php?id=61554724019002"><IoLogoFacebook /></a>
+                            <a className="border-2 border-primary w-10 h-10 flex justify-center items-center rounded-full text-primary hover:bg-primary hover:text-white text-2xl" href="https://github.com/"><IoLogoGithub /></a>
                             <a className="border-2 border-primary w-10 h-10 flex justify-center items-center rounded-full text-primary hover:bg-primary hover:text-white text-3xl" href=""><TiSocialLinkedin /></a>
                         </div>
                     </div>
@@ -43,10 +43,11 @@ const Footer = () => {
                     <div className="w-[20%] space-y-3">
                     <h3 className="text-2xl font-semibold underline underline-offset-8">Quicklinks</h3>
                     <div className="flex flex-col">
-                    <a href="">Home</a>
-                    <a href="">Home</a>
-                    <a href="">Home</a>
-                    <a href="">Home</a>
+                    <a className="hover:underline hover:text-primary" href="/">Home</a>
+                    <a className="hover:underline hover:text-primary" href="/about">About</a>
+                    <a className="hover:underline hover:text-primary" href="/allArt">All artCruft</a>
+                    <a className="hover:underline hover:text-primary" href="/addCraft">Add cruft</a>
+                    <a className="hover:underline hover:text-primary" href="/myArt">My artCruft</a>
                     </div>
                     </div>
 
@@ -55,7 +56,7 @@ const Footer = () => {
                         <p>Signup our newsletter to get update information, news & insight</p>
                         <div className="">
                             <input className="w-full mb-3 p-3 border border-gray-300  outline-0" type="email" name="email" id="" placeholder="Email address" required />
-                            <p><button className="bg-primary text-white w-full py-3">Subscribe</button></p>
+                            <p><button className="bg-primary font-semibold text-white w-full py-3">Subscribe</button></p>
                         </div>
                     </div>
                 </div>
