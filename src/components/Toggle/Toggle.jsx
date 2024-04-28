@@ -13,7 +13,7 @@ const Toggle = () => {
     
     const handleChangeTheme = (e) =>{
         if(e.target.checked){
-            setTheme('luxury')
+            setTheme('black')
         }else{
             setTheme('light')
         }
@@ -21,7 +21,7 @@ const Toggle = () => {
 
 
     return (
-        <div>
+        <div className="mr-4">
             <label className="cursor-pointer grid place-items-center">
                 <input 
                 onChange={handleChangeTheme}

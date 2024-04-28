@@ -21,7 +21,7 @@ export default {
 
   // theme generate
   daisyui: {
-    themes: ["light", "luxury",],
+    themes: ["light", "black",],
   },
 }
 

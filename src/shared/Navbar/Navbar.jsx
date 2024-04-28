@@ -33,7 +33,7 @@ const handleLogOut = () =>{
     }
     return (
         <nav className="bg-base-300">
-            <div className="navbar max-w-7xl mx-auto px-8 border-2 border-red-500">
+            <div className="navbar max-w-7xl mx-auto px-8">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ const handleLogOut = () =>{
                             {links}
                         </ul>
                     </div>
-                    <a onClick={handleClick} className="text-2xl font-semibold font-poppins cursor-pointer">Ember & Clay</a>
+                    <a onClick={handleClick} className="md:text-2xl font-semibold font-poppins cursor-pointer">Ember & <span className="text-primary">Clay</span></a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 gap-10">
@@ -56,17 +56,17 @@ const handleLogOut = () =>{
                     <Toggle />
 
                     {
-                        user ? <div className="flex gap-3">
-                            <div className="w-10 h-10 rounded-full" data-tooltip-id="my-tooltip" data-tooltip-place="top" data-tooltip-content={user.displayName}>
+                        user ? <div className="flex gap-3 ">
+                            <div className="w-10 h-10 rounded-full hidden md:block" data-tooltip-id="my-tooltip" data-tooltip-place="top" data-tooltip-content={user.displayName}>
                             <img className="rounded-full" src={user.photoURL} alt={user.photoURL} />
                             <Tooltip id="my-tooltip" />
                         </div>
-                            <button onClick={handleLogOut} className="bg-primary text-white btn">LogOut</button>
+                            <button onClick={handleLogOut} className="bg-primary text-white px-4 py-2 rounded-sm">LogOut</button>
                             </div>
                             :
-                            <div>
-                                <Link to='/login'><button className="bg-primary text-white btn">Login</button></Link>
-                                <Link to='/register'><button className="bg-primary text-white btn">Register</button></Link>
+                            <div className="flex gap-4">
+                                <Link to='/login'><button className="bg-primary text-white px-4 py-2 rounded-sm">Login</button></Link>
+                                <Link to='/register'><button className="bg-primary text-white px-4 py-2 rounded-sm">Register</button></Link>
                             </div>
                     }
 

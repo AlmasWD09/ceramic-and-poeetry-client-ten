@@ -12,7 +12,7 @@ const SingleAritistPottery = ({category}) => {
             <h3 className="text-xl font-bold">{name}</h3>
             <p className="w-[90%] mx-auto">{description}</p>
             <div className="flex justify-center py-2">
-            <button className="border px-4 py-2 flex items-center gap-3">Learn More <FaArrowRight/></button>
+            <button className="border px-4 py-2 rounded-sm flex items-center gap-3">Learn More <FaArrowRight/></button>
             </div>
            </div>
             </div>

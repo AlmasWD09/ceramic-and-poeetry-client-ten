@@ -17,11 +17,11 @@ const Footer = () => {
 
 
     return (
-        <div className="bg-gray-200 mt-10 ">
+        <div className="bg-[#030712] text-white mt-10 ">
             <div className="max-w-7xl mx-auto px-8  py-20">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  md:gap-10">
                     <div className="w-full  space-y-3">
-                        <h3 className="text-3xl font-bold mt-5">Ember & Clay</h3>
+                        <h3 className="text-3xl font-bold mt-5">Ember & <span className="text-primary">Clay</span></h3>
                         <p className="text-sm ">This could be a metaphorical representation of how text gives form to ideas and shapes our understanding</p>
                         <div className="flex gap-3 pb-3">
                             <a className="border-2 border-primary w-10 h-10 flex justify-center items-center rounded-full text-primary hover:bg-primary hover:text-white text-2xl" href="https://www.facebook.com/profile.php?id=61554724019002"><IoLogoFacebook /></a>

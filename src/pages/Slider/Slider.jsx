@@ -42,15 +42,15 @@ useEffect(()=>{
               categorys.map((item,idx)=>{
                 return (
                   <SwiperSlide key={idx}>
-                    <div className='lg:h-[400px] bg-black relative mt-5 rounded-lg '>
+                    <div className='h-[320px] md:h-[370px] lg:h-[400px] bg-black relative mt-5 rounded-lg '>
                       <img className='w-full opacity-40 rounded-lg' src={item.image} alt="" />
-                      <div className='lg:w-[60%] inset-0 my-10 p-10 space-y-4 text-white absolute'>
+                      <div className='lg:w-[60%] inset-0 md:my-10 p-4 md:p-10 space-y-4 text-white absolute'>
                       <div>
                       <h3 className='text-2xl md:text-3xl font-semibold'>{item.pottery_type}</h3>
                       <h3 className='text-md md:text-xl font-semibold'>{item.title}</h3>
                       </div>
-                      <p>{item.description}</p>
-                      <button className='bg-primary p-3 text-white rounded-lg'>Explore more</button>
+                      <p className='text-sm md:text-lg'>{item.description}</p>
+                      <button className='bg-primary text-white px-4 py-2 rounded-sm'>Explore more</button>
                       </div>
                     <p></p>
                     </div>

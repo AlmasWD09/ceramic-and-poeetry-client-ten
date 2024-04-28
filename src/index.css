@@ -5,3 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* navbar style */
+.active{
+    color: green;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 23px;
+    text-decoration-thickness: 3px;
+}
