@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const PrivatRoutes = ({children}) => {
     const { user, loading } = useAuth();
     const location = useLocation();
-    console.log(location);
+    // console.log(location);
 
     if(loading){
         return (

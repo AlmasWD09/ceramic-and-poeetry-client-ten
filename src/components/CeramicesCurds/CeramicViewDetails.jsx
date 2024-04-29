@@ -18,17 +18,17 @@ console.log(product);
  
     return (
         <div className="max-w-7xl mx-auto px-8 mt-5">
-           <div className="flex justify-center rounded-sm">
-            <img src={product.photo} alt="" />
+           <div className="flex justify-center rounded-lg">
+            <img className="rounded-lg" src={product.photo} alt="" />
            </div>
             {/* content */}
-            <div className="lg:px-28">
-                <h3>{product.name}</h3>
-                <p>{product.selectedCategory}</p>
+            <div className="space-y-1 p-4">
+                <h3 className="text-xl font-bold">{product.name}</h3>
+                <p className=""><span className="text-xl font-bold">selectedCategory: </span>{product.selectedCategory}</p>
                 <p>{product.description}</p>
-                <p>{product.time}</p>
-                <p>{product.customization}</p>
-                <p>{product.stockStatus}</p>
+                <p><span className="text-xl font-bold">time: </span>{product.time}</p>
+                <p><span className="text-xl font-bold">customization: </span>{product.customization}</p>
+                <p><span className="text-xl font-bold">stockStatus: </span>{product.stockStatus}</p>
             </div>
         </div>
     );

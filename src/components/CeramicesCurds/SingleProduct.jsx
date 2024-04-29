@@ -11,7 +11,7 @@ const SingleProduct = ({product}) => {
         <figure className="md:w-[350px] lg:w-[380px] h-[240px]rounded-lg">
                 <img className="rounded-tl-lg rounded-tr-lg w-full h-full" src={photo} alt="" />
                 </figure>
-            <div className="px-2">
+            <div className="px-4">
                 <h3 className="font-bold text-xl">{name}</h3>
                 <p>{description}</p>
                 <p><span className='font-bold'>price: </span>${price}</p>

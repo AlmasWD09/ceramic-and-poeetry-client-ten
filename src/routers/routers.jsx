@@ -42,7 +42,9 @@ const routers = createBrowserRouter([
         },
         {
           path:'/updateCraft',
-          element:<UpdateCruft />
+          element:<PrivatRoutes>
+              <UpdateCruft />
+            </PrivatRoutes>,
         },
         {
             path:'/myArt',
