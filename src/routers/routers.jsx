@@ -12,6 +12,8 @@ import AddCraft from "../anotherFroms/AddForms/AddCraft";
 import AllArts from "../pages/AllArts/AllArts";
 import MyArts from "../pages/MyArts/MyArts";
 import CeramicViewDetails from "../components/CeramicesCurds/CeramicViewDetails";
+import SubCategory from "../components/SubCategory/SubCategory";
+import UpdateCruft from "../anotherFroms/UpdateForms/UpdateCruft";
 
 
 const routers = createBrowserRouter([
@@ -39,14 +41,23 @@ const routers = createBrowserRouter([
             </PrivatRoutes>,
         },
         {
+          path:'/updateCraft',
+          element:<UpdateCruft />
+        },
+        {
             path:'/myArt',
             element:<PrivatRoutes>
               <MyArts />
             </PrivatRoutes>,
         },
         {
-          path:'/ceramicesViewDetails/:id',
+          path:'/viewDetails/:id',
           element:<CeramicViewDetails />,
+          // loader:({params}) =>fetch(`http://localhost:5000/categories/${params.id}`)
+        },
+        {
+          path:'/subCategory',
+          element:<SubCategory />
         },
         {
             path:'/register',

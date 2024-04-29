@@ -7,8 +7,8 @@ const AllArts = () => {
             <Helmet>
                 <title>Ceramices and poettry / all art</title>
             </Helmet>
-            <div>
-                <h1>all art page</h1>
+            <div className="max-w-7xl mx-auto px-8">
+                <h1>all curd asba ai jaykata vhi</h1>
             </div>
         </>
     );

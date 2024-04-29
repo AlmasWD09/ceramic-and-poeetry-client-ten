@@ -17,7 +17,7 @@ const SingleProduct = ({product}) => {
                 <p><span className='font-bold'>price: </span>${price}</p>
                 <p><span className='font-bold'>{rating}</span></p>
                 <div className="w-full">
-                    <Link to={`/ceramicesViewDetails/:${_id}`}>
+                    <Link to={`/viewDetails/${_id}`}>
                     <button className="w-full bg-secondery py-3 rounded-lg text-white hover:bg-primary my-4">View Details</button>
                     </Link>
                 </div>

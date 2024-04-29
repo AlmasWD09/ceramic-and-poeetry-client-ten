@@ -19,28 +19,28 @@ const Login = () => {
         const form = e.target
         const email = form.email.value
         const password = form.password.value
-        // console.log(email, password);
+   
 
         // email validation
-        // const registeredEmail = 'database thaka asba register email'
+        // const registeredEmail = 
         // if (email !== registeredEmail) {
         //     toast.error("Email address does not match");
         //     return;
         // }
 
         // password validation
-        // const uppercasePassword = /[A-Z]/;
-        // const lowercasePassword = /[a-z]/;
-        // const minLength = 6;
-        // if (!uppercasePassword.test(password)) {
-        //     return toast.error("'Password must at least one uppercase letter")
-        // }
-        // if (!lowercasePassword.test(password)) {
-        //     return toast.error("'Password must at least one lowercase letter")
-        // }
-        // if (password.length < minLength) {
-        //     return toast.error("'Password must at least 6 characters ")
-        // }
+        const uppercasePassword = /[A-Z]/;
+        const lowercasePassword = /[a-z]/;
+        const minLength = 6;
+        if (!uppercasePassword.test(password)) {
+            return toast.error("'Password must at least one uppercase letter")
+        }
+        if (!lowercasePassword.test(password)) {
+            return toast.error("'Password must at least one lowercase letter")
+        }
+        if (password.length < minLength) {
+            return toast.error("'Password must at least 6 characters ")
+        }
 
 
         // logIn user

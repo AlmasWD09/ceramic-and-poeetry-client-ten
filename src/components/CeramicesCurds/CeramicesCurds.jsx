@@ -23,7 +23,7 @@ const CeramicesCurds = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {
-                    products.map((product,idx)=>{
+                    products?.map((product,idx)=>{
                         return (
                             <SingleProduct
                             key={idx}

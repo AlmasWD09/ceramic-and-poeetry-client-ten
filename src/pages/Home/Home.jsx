@@ -1,5 +1,6 @@
 // import Slider from "../Slider/Slider";
 // import AirtistPottery from "../../components/Airtist/AirtistPottery";
+import ArtCategories from "../../components/ArtCategories/ArtCategories";
 import CeramicesCurds from "../../components/CeramicesCurds/CeramicesCurds";
 import { Helmet } from "react-helmet-async";
 // import PotteryPulse from "../../components/PotteryPulse/PotteryPulse";
@@ -14,6 +15,7 @@ const Home = () => {
             <div>
                 {/* <Slider /> */}
                 <CeramicesCurds />
+                <ArtCategories />
                 {/* <PotteryPulse />
                 <AirtistPottery /> */}
             </div>

@@ -20,9 +20,7 @@ const About = () => {
                     <div className="">
                         <img className="h-[200px] rounded" src="https://i.ibb.co/Lr8NrP6/foto-sushi-6anudmp-ILw4-unsplash.webp" alt="" />
                     </div>
-                    <div className="text-center my-2 space-y-2" data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1000">
+                    <div className="text-center my-2 space-y-2">
                         <h3 className="font-semibold">Carl Parker</h3>
                         <h1 className="text-sm">Guardian of Eternity</h1>
                         <div className="flex justify-center gap-3">
@@ -37,9 +35,7 @@ const About = () => {
                     <div className="">
                         <img className="h-[200px] w-full rounded" src="https://i.ibb.co/bLSvhVD/image2.webp" alt="" />
                     </div>
-                    <div className="text-center my-2 space-y-2" data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1000">
+                    <div className="text-center my-2 space-y-2">
                         <h3 className="font-semibold">Anna Doe</h3>
                         <h1 className="text-sm">Warden of Perpetuity</h1>
                         <div className="flex justify-center gap-3">
@@ -54,9 +50,7 @@ const About = () => {
                     <div className="">
                         <img className="h-[200px] rounded" src="https://i.ibb.co/XCD9kdx/image03.webp" alt="" />
                     </div>
-                    <div className="text-center my-2 space-y-2" data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1000">
+                    <div className="text-center my-2 space-y-2">
                         <h3 className="font-semibold">David Doe</h3>
                         <h1 className="text-sm">Sentinel of the Ages</h1>
                         <div className="flex justify-center gap-3">
@@ -71,9 +65,7 @@ const About = () => {
                     <div className="">
                         <img className="h-[200px] rounded" src="https://i.ibb.co/BqY5Zvc/image04.webp" alt="" />
                     </div>
-                    <div className="text-center my-2 space-y-2" data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1000">
+                    <div className="text-center my-2 space-y-2">
                         <h3 className="font-semibold">Lauren Miller</h3>
                         <h1 className="text-sm">Custodian of Continuum</h1>
                         <div className="flex justify-center gap-3">
@@ -88,9 +80,7 @@ const About = () => {
                     <div className="">
                         <img className="h-[200px] rounded" src="https://i.ibb.co/LpK9xYb/image05.webp" alt="" />
                     </div>
-                    <div className="text-center my-2 space-y-2" data-aos="fade-down"
-                        data-aos-easing="linear"
-                        data-aos-duration="1000">
+                    <div className="text-center my-2 space-y-2">
                         <h3 className="font-semibold">Carl Parker</h3>
                         <h1 className="text-sm">Custodian of Forever</h1>
                         <div className="flex justify-center gap-3">

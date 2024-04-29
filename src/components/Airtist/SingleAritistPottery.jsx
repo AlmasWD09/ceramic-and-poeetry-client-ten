@@ -7,7 +7,7 @@ const SingleAritistPottery = ({category}) => {
         <div className=" h-[600px] rounded-t-full flex justify-end items-end relative">
             <img className="h-[600px] rounded-t-full " src={image} alt="" />
 
-            <div className="h-[200px] bg-slate-900  text-white opacity-70 text-center flex justify-center items-center absolute -inset-x-0.5">
+            <div className="h-[200px] bg-slate-950  hover:bg-primary text-white opacity-70 text-center flex justify-center items-center absolute -inset-x-0.5">
            <div className="space-y-2 ">
             <h3 className="text-xl font-bold">{name}</h3>
             <p className="w-[90%] mx-auto">{description}</p>
