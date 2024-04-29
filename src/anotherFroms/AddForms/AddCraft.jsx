@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import toast from "react-hot-toast";
+import Swal from "sweetalert2";
 
 
 const AddCraft = () => {
@@ -38,7 +39,11 @@ const AddCraft = () => {
         .then(data=>{
             console.log(data);
             if(data.insertedId){
-                toast.success('addCraft to database successfully')
+                Swal.fire({
+                    title: "Add category",
+                    text: "You clicked the button!",
+                    icon: "success"
+                  });
             }
         })
     }

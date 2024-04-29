@@ -1,13 +1,44 @@
 import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
+import Swal from "sweetalert2";
 
 
-const MyArtCruft = ({category}) => {
-const{photo,name,price,rating,customization,stockStatus} = category || {};
 
-const handleDeleteCategory = () =>{
-        // console.log('click hoyca boss');
-}
+const MyArtCruft = ({ category,control,setControl }) => {
+    const { _id, photo, name, price, rating, customization, stockStatus } = category || {};
+
+    const handleDeleteCategory = (id) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`http://localhost:5000/categories/${id}`, {
+                    method: 'DELETE',
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        if (data.deletedCount > 0) {
+                            Swal.fire({
+                                title: "Deleted!",
+                                text: "Your category has been deleted.",
+                                icon: "success"
+                            });
+                            setControl(!control)
+                        }
+                    })
+
+            }
+        });
+
+
+    }
 
     return (
         <div className="max-w-7xl mx-auto px-8 lg:mt-10">
@@ -26,10 +57,10 @@ const handleDeleteCategory = () =>{
                         <p>{customization}</p>
                         <p>{stockStatus}</p>
                         <div className="flex gap-3">
-                            <Link to={`/updateCraft`}>
-                            <button className="btn-sm text-xs font-normal  bg-primary text-white rounded-sm">Update</button>
+                            <Link to={`/updateCraft/${_id}`}>
+                                <button className="btn-sm text-xs font-normal  bg-primary text-white rounded-sm">Update</button>
                             </Link>
-                            <button onClick={handleDeleteCategory} className="btn-sm text-xs font-normal  bg-yellow-600 text-white rounded-sm">Delete</button>
+                            <button onClick={() => handleDeleteCategory(_id)} className="btn-sm text-xs font-normal  bg-yellow-600 text-white rounded-sm">Delete</button>
                         </div>
                     </div>
                 </div>
@@ -41,5 +72,7 @@ const handleDeleteCategory = () =>{
 // propTypes validation
 MyArtCruft.propTypes = {
     category: PropTypes.object,
-  };
+    control: PropTypes.bool,
+    setControl: PropTypes.func,
+};
 export default MyArtCruft;

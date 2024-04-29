@@ -2,13 +2,15 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 
 
+
+
 const UpdateCruft = () => {
     const [selectedCategory, setSelectedCategory] = useState('');
 
+  
     const handleCategoryChange = (e) => {
         setSelectedCategory(e.target.value);
     };
-
     const handleUpdateCraft = (e) => {
         e.preventDefault()
         const form = e.target;
@@ -24,7 +26,7 @@ const UpdateCruft = () => {
         const description = form.description.value;
         const photo = form.photo.value;
         const updateCraft = {name,stockStatus,price,rating,customization,time,userName,userEmail,selectedCategory,description,photo}
-        console.log(updateCraft)
+        
     }
     return (
         <>
@@ -32,6 +34,7 @@ const UpdateCruft = () => {
             <title>Ceramices and poettry / update craft</title>
         </Helmet>
     <div className=" md:h-screen bg-gray-300 py-10">
+        <h1>update{loadDtat.length}</h1>
         <div className="max-w-7xl mx-auto px-8">
             <form onSubmit={handleUpdateCraft}>
                 <div className="flex flex-col md:flex-row justify-center md:justify-between gap-2">

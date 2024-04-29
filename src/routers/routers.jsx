@@ -41,10 +41,11 @@ const routers = createBrowserRouter([
             </PrivatRoutes>,
         },
         {
-          path:'/updateCraft',
+          path:'/updateCraft/:id',
           element:<PrivatRoutes>
               <UpdateCruft />
             </PrivatRoutes>,
+
         },
         {
             path:'/myArt',
@@ -55,7 +56,6 @@ const routers = createBrowserRouter([
         {
           path:'/viewDetails/:id',
           element:<CeramicViewDetails />,
-          // loader:({params}) =>fetch(`http://localhost:5000/categories/${params.id}`)
         },
         {
           path:'/subCategory',
