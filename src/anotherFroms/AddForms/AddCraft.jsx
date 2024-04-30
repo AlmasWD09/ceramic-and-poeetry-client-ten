@@ -53,6 +53,7 @@ const AddCraft = () => {
                 <title>Ceramices and poettry / add craft</title>
             </Helmet>
         <div className=" md:h-screen bg-gray-300 py-10">
+            <h1 className="text-2xl font-semibold underline pb-5 text-center">Add cruft item</h1>
             <div className="max-w-7xl mx-auto px-8">
                 <form onSubmit={handleAddCraft}>
                     <div className="flex flex-col md:flex-row justify-center md:justify-between gap-2">

@@ -1,0 +1,120 @@
+[
+    {
+      "image": "https://i.ibb.co/wB83JHC/10818.webp",
+      "name": "Clay-made poottery",
+      "subCategory": "Mugs",
+      "description": "Handcrafted earthenware mug with rustic charm, perfect for enjoying your favorite beverages.",
+      "price": "12.99",
+      "rating": 4.5,
+      "time": "2 days"
+    },
+    {
+        "image": "https://i.ibb.co/cCmxc1F/2150164892.webp",
+        "name": "Stoneware",
+        "subCategory": "Bowls",
+        "description": "Add a touch of rustic charm to your tableware collection with these handcrafted ",
+        "price": "20.99",
+        "rating": 3.4,
+        "time": "9 days"
+    },
+    {
+        "image": "https://i.ibb.co/HpCsYN2/Porcelain02.webp",
+        "name": "Porcelain",
+        "subCategory": "Bowls",
+        "description": "Set of porcelain bathroom accessories, sleek and modern design.",
+        "price": "29.99",
+        "rating": 4.7,
+        "time": "3 days"
+    },
+    {
+        "image": "https://i.ibb.co/c20mZ0p/Terra-Coatta01.webp",
+        "name": "Terra Cotta",
+        "subCategory": "Bowls",
+        "description": "Fine porcelain tea set with delicate floral patterns, perfect for elegant tea parties.",
+        "price": "29.99",
+        "rating": 4.7,
+        "time": "3 days"
+    },
+    {
+        "image": "https://i.ibb.co/h9gMzb8/2149480236.webp",
+        "name": "Ceramics & Architectural",
+        "subCategory": "Bowls",
+        "description": "Artisan clay bowl with unique glaze, adds character to your tableware collection.",
+        "price": "24.99",
+        "rating": 4.4,
+        "time": "4 days"
+    },
+    {
+        "image": "https://i.ibb.co/yd1WfGV/Porcelain01.webp",
+        "name": "Home decor pottery",
+        "subCategory": "Bowls",
+        "description": "Classic white porcelain serving platter, versatile for presenting appetizers",
+        "price": "29.99",
+        "rating": 4.7,
+        "time": "3 days"
+    },
+    {
+      "image": "https://i.ibb.co/pLRddxy/2148567568.webp",
+      "name": "Clay-made poottery",
+      "subCategory": "Sculptures",
+      "description": "Unique clay sculpture featuring abstract design, adds artistic flair to any space.",
+      "price": "89.99",
+      "rating": 4.7,
+      "time": "7 days"
+    },
+    {
+      "image": "https://i.ibb.co/Y3nhxjf/2148679155.webp",
+      "name": "Clay-made poottery",
+      "subCategory": "Plant Pots",
+      "description": "Terracotta plant pot with traditional craftsmanship, ideal for indoor and outdoor plants.",
+      "price": "19.99",
+      "rating": 4.3,
+      "time": "3 days"
+    },
+    {
+      "image": "https://i.ibb.co/cbxjn07/2148155240.webp",
+      "name": "Clay-made poottery",
+      "subCategory": "Plates",
+      "description": "Set of hand-painted ceramic plates, vibrant colors, perfect for serving meals with style.",
+      "price": "34.99",
+      "rating": 4.6,
+      "time": "5 days"
+    },
+    {
+      "image": "https://i.ibb.co/f8gGw60/2150164919.webp",
+      "name": "Stoneware",
+      "subCategory": "Bowls",
+      "description": "Crafted with high-quality stoneware, this dinner set exudes elegance .",
+      "price": "29.99",
+      "rating": 4.7,
+      "time": "3 days"
+    },
+    {
+      "image": "https://i.ibb.co/R2CQ6mp/Porcelain03.webp",
+      "name": "Porcelain",
+      "subCategory": "Bowls",
+      "description": "High-quality porcelain dinnerware set",
+      "price": "29.99",
+      "rating": 4.7,
+      "time": "3 days"
+    },
+    {
+      "image": "https://i.ibb.co/WPKpCh3/Porcelain04.webp",
+      "name": "Porcelain",
+      "subCategory": "Bowls",
+      "description": "Fine porcelain tea set with delicate floral patterns, perfect for elegant tea parties.",
+      "price": "29.99",
+      "rating": 4.7,
+      "time": "3 days"
+    },
+    {
+        "image": "https://i.ibb.co/1LPj59g/Terra-Coatta02.webp",
+        "name": "Terra Cotta",
+        "subCategory": "Bowls",
+        "description": "Fine porcelain tea set with delicate floral patterns, perfect for elegant tea parties.",
+        "price": "29.99",
+        "rating": 4.7,
+        "time": "3 days"
+    }
+  ]
+  

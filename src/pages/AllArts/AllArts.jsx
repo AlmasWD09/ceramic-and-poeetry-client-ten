@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
 
 const AllArts = () => {
@@ -35,7 +36,9 @@ const AllArts = () => {
                                 </td>
                                 <td>Purple</td>
                                 <th>
-                                    <button className="btn-sm text-xs font-normal  bg-primary text-white rounded-sm">View Details</button>
+                                    <Link to={`/viewDetails/${_id}`}>
+                                        <button className="btn-sm text-xs font-normal  bg-primary text-white rounded-sm">View Details</button>
+                                    </Link>
                                 </th>
                             </tr>
                             {/* row 2 */}
@@ -53,12 +56,14 @@ const AllArts = () => {
                                 </td>
                                 <td>Red</td>
                                 <th>
-                                    <button className="btn-sm text-xs font-normal  bg-primary text-white rounded-sm">View Details</button>
+                                    <Link to={`/viewDetails/${_id}`}>
+                                        <button className="btn-sm text-xs font-normal  bg-primary text-white rounded-sm">View Details</button>
+                                    </Link>
                                 </th>
                             </tr>
-                           
+
                         </tbody>
-                     
+
 
                     </table>
                 </div>
