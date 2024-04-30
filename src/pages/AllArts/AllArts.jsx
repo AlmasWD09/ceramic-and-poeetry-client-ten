@@ -36,7 +36,7 @@ const AllArts = () => {
                                 </td>
                                 <td>Purple</td>
                                 <th>
-                                    <Link to={`/viewDetails/${_id}`}>
+                                    <Link>
                                         <button className="btn-sm text-xs font-normal  bg-primary text-white rounded-sm">View Details</button>
                                     </Link>
                                 </th>
@@ -56,7 +56,7 @@ const AllArts = () => {
                                 </td>
                                 <td>Red</td>
                                 <th>
-                                    <Link to={`/viewDetails/${_id}`}>
+                                    <Link>
                                         <button className="btn-sm text-xs font-normal  bg-primary text-white rounded-sm">View Details</button>
                                     </Link>
                                 </th>

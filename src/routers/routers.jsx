@@ -45,7 +45,7 @@ const routers = createBrowserRouter([
           element:<PrivatRoutes>
               <UpdateCruft />
             </PrivatRoutes>,
-
+          loader:({params})=>fetch(`http://localhost:5000/categories/${params.id}`)
         },
         {
             path:'/myArt',
@@ -58,8 +58,10 @@ const routers = createBrowserRouter([
           element:<CeramicViewDetails />,
         },
         {
-          path:'/subCategory',
-          element:<SubCategory />
+          path:'/subCategory/:subcategory',
+          element:<SubCategory />,
+          loader:({params})=>fetch(`http://localhost:5000/subCategories/${params.subcategory}`)
+
         },
         {
             path:'/register',

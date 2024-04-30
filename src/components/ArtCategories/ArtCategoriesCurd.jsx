@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 const ArtCategoriesCurd = ({singleCategory}) => {
     // const{image,name,subCategory,description,price,rating,time} = singleCategory || {};
     const{image,name,subCategory,price} = singleCategory || {};
-    console.log(singleCategory);
+    // console.log(singleCategory);
     const navigate = useNavigate();
     const handleArtCruft = () =>{
-        navigate('/subCategory')
+        navigate(`/subCategory/${subCategory}`)
     }
     return (
       <div className="max-w-7xl mx-auto px-8">
