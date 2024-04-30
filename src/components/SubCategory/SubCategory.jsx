@@ -2,6 +2,10 @@ import { Helmet } from "react-helmet-async";
 
 
 const SubCategory = () => {
+
+
+
+    
     return (
         <>
             <Helmet>
@@ -15,8 +19,8 @@ const SubCategory = () => {
                 </div>
 
 
-                {/* one */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
+            
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-5">
                     <div className=" md:w-[350px] lg:w-[380px] shadow-xl rounded-lg">
                         <div className="space-y-3">
                             <figure className="md:w-[350px] lg:w-[380px] h-[240px]rounded-lg">
@@ -35,7 +39,7 @@ const SubCategory = () => {
                             </div>
                         </div>
                     </div>
-                    {/* one */}
+                 
                     <div className=" md:w-[350px] lg:w-[380px] shadow-xl rounded-lg">
                         <div className="space-y-3">
                             <figure className="md:w-[350px] lg:w-[380px] h-[240px]rounded-lg">
@@ -54,7 +58,7 @@ const SubCategory = () => {
                             </div>
                         </div>
                     </div>
-                    {/* one */}
+                 
                     <div className=" md:w-[350px] lg:w-[380px] shadow-xl rounded-lg">
                         <div className="space-y-3">
                             <figure className="md:w-[350px] lg:w-[380px] h-[240px]rounded-lg">
@@ -73,7 +77,7 @@ const SubCategory = () => {
                             </div>
                         </div>
                     </div>
-                    {/* one */}
+                 
                     <div className=" md:w-[350px] lg:w-[380px] shadow-xl rounded-lg">
                         <div className="space-y-3">
                             <figure className="md:w-[350px] lg:w-[380px] h-[240px]rounded-lg">
@@ -92,7 +96,7 @@ const SubCategory = () => {
                             </div>
                         </div>
                     </div>
-                    {/* one */}
+                 
                     <div className=" md:w-[350px] lg:w-[380px] shadow-xl rounded-lg">
                         <div className="space-y-3">
                             <figure className="md:w-[350px] lg:w-[380px] h-[240px]rounded-lg">
@@ -111,8 +115,8 @@ const SubCategory = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-
+                </div> */}
+         
             </div>
         </>
     );

@@ -40,7 +40,7 @@ const AddCraft = () => {
             console.log(data);
             if(data.insertedId){
                 Swal.fire({
-                    title: "Add category",
+                    title: "Add successfull",
                     text: "You clicked the button!",
                     icon: "success"
                   });

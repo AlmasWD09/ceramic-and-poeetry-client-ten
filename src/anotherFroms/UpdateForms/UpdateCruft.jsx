@@ -2,6 +2,7 @@ import { data } from "autoprefixer";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 
@@ -44,6 +45,13 @@ const { _id, photo, name, price, rating, customization,time, stockStatus,userNam
             .then(res=>res.json())
             .then(data=>{
                 console.log(data);
+                if(data.modifiedCount > 0){
+                    Swal.fire({
+                        title: "update successfull",
+                        text: "You clicked the button!",
+                        icon: "success"
+                      });
+                }
             })
     }
     return (
@@ -52,7 +60,6 @@ const { _id, photo, name, price, rating, customization,time, stockStatus,userNam
             <title>Ceramices and poettry / update craft</title>
         </Helmet>
     <div className=" md:h-screen bg-gray-300 py-10">
-        <h1>name:{name}</h1>
         <div className="max-w-7xl mx-auto px-8">
             <form onSubmit={handleUpdateCraft}>
                 <div className="flex flex-col md:flex-row justify-center md:justify-between gap-2">
