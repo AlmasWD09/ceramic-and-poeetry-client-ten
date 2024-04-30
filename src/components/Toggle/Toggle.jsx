@@ -21,7 +21,7 @@ const Toggle = () => {
 
 
     return (
-        <div className="mr-4">
+        <div className="mr-4 hidden md:block">
             <label className="cursor-pointer grid place-items-center">
                 <input 
                 onChange={handleChangeTheme}

@@ -45,7 +45,7 @@ const routers = createBrowserRouter([
           element:<PrivatRoutes>
               <UpdateCruft />
             </PrivatRoutes>,
-          loader:({params})=>fetch(`http://localhost:5000/categories/${params.id}`)
+          loader:({params})=>fetch(`https://ceramics-and-pottery-server-eta.vercel.app/categories/${params.id}`)
         },
         {
             path:'/myArt',
@@ -60,13 +60,13 @@ const routers = createBrowserRouter([
         {
           path:'/subCategory/:subcategory',
           element:<SubCategory />,
-          loader:({params})=>fetch(`http://localhost:5000/subCategories/${params.subcategory}`)
+          loader:({params})=>fetch(`https://ceramics-and-pottery-server-eta.vercel.app/subCategories/${params.subcategory}`)
 
         },
         {
             path:'/register',
             element:<Register />,
-        },
+        }, 
         {
             path:'/login',
             element:<Login />

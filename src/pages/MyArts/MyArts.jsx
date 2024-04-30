@@ -11,7 +11,7 @@ const[categories,setCategories] = useState([]);
 const [control,setControl] = useState(false)
 
 useEffect(()=>{
-    fetch(`http://localhost:5000/categories/email/${user.email}`)
+    fetch(`https://ceramics-and-pottery-server-eta.vercel.app/categories/email/${user.email}`)
     .then(res=>res.json())
     .then(data=>setCategories(data))
 },[user,control])

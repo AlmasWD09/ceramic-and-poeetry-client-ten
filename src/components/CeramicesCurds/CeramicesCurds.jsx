@@ -7,7 +7,7 @@ import SingleProduct from "./SingleProduct";
 const CeramicesCurds = () => {
     const [products,setProducts] = useState([])
     useEffect(()=>{
-        const url = 'http://localhost:5000/categories'
+        const url = 'https://ceramics-and-pottery-server-eta.vercel.app/categories'
         fetch(url)
         .then(res=>res.json())
         .then(data=>setProducts(data))

@@ -35,7 +35,7 @@ const { _id, photo, name, price, rating, customization,time, stockStatus,userNam
         const photo = form.photo.value;
         const updateCraft = {name,stockStatus,price,rating,customization,time,userName,userEmail,selectedCategory,description,photo}
   
-            fetch(`http://localhost:5000/categories/${_id}`,{
+            fetch(`https://ceramics-and-pottery-server-eta.vercel.app/categories/${_id}`,{
                 method:'PUT',
                 headers:{
                     'content-type':'application/json'

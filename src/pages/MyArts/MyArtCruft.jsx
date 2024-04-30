@@ -18,7 +18,7 @@ const MyArtCruft = ({ category,control,setControl }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/categories/${id}`, {
+                fetch(`https://ceramics-and-pottery-server-eta.vercel.app/categories/${id}`, {
                     method: 'DELETE',
                 })
                     .then(res => res.json())

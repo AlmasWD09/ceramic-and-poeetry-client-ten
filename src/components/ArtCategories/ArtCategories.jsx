@@ -5,7 +5,7 @@ import ArtCategoriesCurd from "./ArtCategoriesCurd";
 const ArtCategories = () => {
 const [categories,setCategories] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/subCategories')
+        fetch('https://ceramics-and-pottery-server-eta.vercel.app/subCategories')
         .then(res=>res.json())
         .then(data=>setCategories(data))
     },[])
