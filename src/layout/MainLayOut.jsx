@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
-// import Footer from "../shared/Footer/Footer";
-// import ScrollButton from "../components/ScrollButton/ScrollButton";
+import Footer from "../shared/Footer/Footer";
+import ScrollButton from "../components/ScrollButton/ScrollButton";
 
 
 const MainLayOut = () => {
@@ -9,8 +9,8 @@ const MainLayOut = () => {
         <div>
             <Navbar />
             <Outlet />
-            {/* <Footer />
-            <ScrollButton /> */}
+            <Footer />
+            <ScrollButton />
         </div>
     );
 };

@@ -19,14 +19,7 @@ const Login = () => {
         const form = e.target
         const email = form.email.value
         const password = form.password.value
-   
 
-        // email validation
-        // const registeredEmail = 
-        // if (email !== registeredEmail) {
-        //     toast.error("Email address does not match");
-        //     return;
-        // }
 
         // password validation
         const uppercasePassword = /[A-Z]/;
