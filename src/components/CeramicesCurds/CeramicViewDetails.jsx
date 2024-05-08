@@ -8,7 +8,7 @@ const CeramicViewDetails = () => {
 
    const {id} = useParams();
    useEffect(()=>{
-    fetch(`https://ceramics-and-pottery-server-eta.vercel.app/categories/${id}`)
+    fetch(`https://ceramices-and-pottery.vercel.app/categories/${id}`)
     .then(res=>res.json())
     .then(data=>setProduct(data))
    },[id])

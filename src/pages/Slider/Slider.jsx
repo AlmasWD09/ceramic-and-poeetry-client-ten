@@ -13,7 +13,7 @@ import { useEffect, useState } from 'react';
 const Slider = () => {
 const [categorys,setCategorys] = useState([])
 useEffect(()=>{
-  const url = 'https://ceramics-and-pottery-server-eta.vercel.app/sliders'
+  const url = 'https://ceramices-and-pottery.vercel.app/sliders'
   fetch(url)
   .then(res=>res.json())
   .then(data=>setCategorys(data))

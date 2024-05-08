@@ -5,7 +5,7 @@ import SingleAritistPottery from "./SingleAritistPottery";
 const AirtistPottery = () => {
     const [categorys, setCategorys] = useState([])
     useEffect(() => {
-        const url = 'https://ceramics-and-pottery-server-eta.vercel.app/airtistPottery'
+        const url = 'https://ceramices-and-pottery.vercel.app/airtistPottery'
         fetch(url)
             .then(res => res.json())
             .then(data => setCategorys(data))

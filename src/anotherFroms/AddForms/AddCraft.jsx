@@ -28,7 +28,7 @@ const AddCraft = () => {
         const addCraft = {name,stockStatus,price,rating,customization,time,userName,userEmail,selectedCategory,description,photo}
         // console.log(addCraft
         form.reset()
-        fetch('https://ceramics-and-pottery-server-eta.vercel.app/categories',{
+        fetch('https://ceramices-and-pottery.vercel.app/categories',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
